@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "439841605045",
+    "project_id": "soonvalley-123",
+    "storage_bucket": "soonvalley-123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439841605045:android:e5a543f0bdfc2556edc5fc",
+        "android_client_info": {
+          "package_name": "com.soonvalleytransport.soon_valley_transport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439841605045-pnuigndk6baf0lvumptkdl7gi2oe7kmd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiEbEq7Va2lhPjeTPVAdTCHCpK4YilcGA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439841605045-pnuigndk6baf0lvumptkdl7gi2oe7kmd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
