@@ -279,7 +279,7 @@ class _UserBookNowState extends State<UserBookNow> {
                     );
                     if (pickedDate != null) {
                       String formattedDate =
-                      DateFormat('MM-dd-yyyy').format(pickedDate);
+                          DateFormat('MM-dd-yyyy').format(pickedDate);
                       setState(() {
                         dateInputController.text = formattedDate;
                       });
@@ -405,59 +405,59 @@ class _UserBookNowState extends State<UserBookNow> {
                 SizedBox(height: Get.height * 0.01),
                 isCash
                     ? ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: lightColorScheme.primary,
-                      foregroundColor: Colors.white,
-                      minimumSize: const Size.fromHeight(50)),
-                  onPressed: () {
-                    addBooking(
-                      currentUser!.uid,
-                      fullNameController.text.trim(),
-                      contactNoController.text.trim(),
-                      fromDropdownValue,
-                      toDropdownValue,
-                      busDropdownValue,
-                      dateInputController.text.trim(),
-                      timeDropdownValue,
-                      farePrice!,
-                      paymentOption,
-                    );
-                  },
-                  child: const AutoSizeText(
-                    "Book Now",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 18),
-                  ),
-                )
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: lightColorScheme.primary,
+                            foregroundColor: Colors.white,
+                            minimumSize: const Size.fromHeight(50)),
+                        onPressed: () {
+                          addBooking(
+                            currentUser!.uid,
+                            fullNameController.text.trim(),
+                            contactNoController.text.trim(),
+                            fromDropdownValue,
+                            toDropdownValue,
+                            busDropdownValue,
+                            dateInputController.text.trim(),
+                            timeDropdownValue,
+                            farePrice!,
+                            paymentOption,
+                          );
+                        },
+                        child: const AutoSizeText(
+                          "Book Now",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                      )
                     : ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      backgroundColor: lightColorScheme.primary,
-                      foregroundColor: Colors.white,
-                      minimumSize: const Size.fromHeight(50)),
-                  onPressed: () {
-                    if (_formKey.currentState!.validate()) {
-                      addBooking(
-                        currentUser!.uid,
-                        fullNameController.text.trim(),
-                        contactNoController.text.trim(),
-                        fromDropdownValue,
-                        toDropdownValue,
-                        busDropdownValue,
-                        dateInputController.text.trim(),
-                        timeDropdownValue,
-                        farePrice!,
-                        paymentOption,
-                      );
-                    }
-                  },
-                  child: const AutoSizeText(
-                    "Pay Now",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontWeight: FontWeight.bold, fontSize: 18),
-                  ),
-                ),
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: lightColorScheme.primary,
+                            foregroundColor: Colors.white,
+                            minimumSize: const Size.fromHeight(50)),
+                        onPressed: () {
+                          if (_formKey.currentState!.validate()) {
+                            addBooking(
+                              currentUser!.uid,
+                              fullNameController.text.trim(),
+                              contactNoController.text.trim(),
+                              fromDropdownValue,
+                              toDropdownValue,
+                              busDropdownValue,
+                              dateInputController.text.trim(),
+                              timeDropdownValue,
+                              farePrice!,
+                              paymentOption,
+                            );
+                          }
+                        },
+                        child: const AutoSizeText(
+                          "Pay Now",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 18),
+                        ),
+                      ),
               ],
             ),
           ),
@@ -466,16 +466,18 @@ class _UserBookNowState extends State<UserBookNow> {
     );
   }
 
-  addBooking(String uid,
-      String name,
-      String contact,
-      String fromTravel,
-      String toTravel,
-      String busName,
-      String bookingDate,
-      String bookingBusTime,
-      String farePrice,
-      String paymentOption,) {
+  addBooking(
+    String uid,
+    String name,
+    String contact,
+    String fromTravel,
+    String toTravel,
+    String busName,
+    String bookingDate,
+    String bookingBusTime,
+    String farePrice,
+    String paymentOption,
+  ) {
     if (_formKey.currentState!.validate()) {
       try {
         Booking bookingModel = Booking(

@@ -69,7 +69,8 @@ class _MyAppState extends State<MyApp> {
             home: widget.showHome ? const Home() : const OnBoarding(),
             builder: (context, child) {
               return MediaQuery(
-                data: MediaQuery.of(context).copyWith(textScaleFactor: 1),
+                data: MediaQuery.of(context)
+                    .copyWith(textScaler: const TextScaler.linear(1)),
                 child: child!,
               );
             },

@@ -7,8 +7,7 @@ class BookingController extends GetxController {
   final CollectionReference _bookingRef =
       FirebaseFirestore.instance.collection('booking');
 
-  Future<void> createBooking(
-      Booking bookingModel, BuildContext context) async {
+  Future<void> createBooking(Booking bookingModel, BuildContext context) async {
     await _bookingRef.doc().set(bookingModel.toMap());
   }
 

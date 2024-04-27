@@ -30,7 +30,7 @@ class _UserNonAcBusesState extends State<UserNonAcBuses> {
               title: Text(
                 '${myItemsNonAC[index].to} - ${myItemsNonAC[index].from}',
                 style:
-                const TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
+                    const TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
               ),
               trailing: Text(
                 myItemsNonAC[index].farePrice,

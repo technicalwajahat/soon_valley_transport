@@ -31,7 +31,7 @@ class _UserAcBusesState extends State<UserAcBuses> {
               title: Text(
                 '${myItemsAC[index].to} - ${myItemsAC[index].from}',
                 style:
-                const TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
+                    const TextStyle(fontWeight: FontWeight.w600, fontSize: 16),
               ),
               trailing: Text(
                 myItemsAC[index].farePrice,

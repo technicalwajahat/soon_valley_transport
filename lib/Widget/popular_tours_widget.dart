@@ -13,12 +13,13 @@ class CountryListTile extends StatelessWidget {
   final String totalKms;
   final String imageUrl;
 
-  const CountryListTile({Key? key,
-    required this.cityName,
-    required this.timeTaken,
-    required this.imageUrl,
-    required this.farePrice,
-    required this.totalKms})
+  const CountryListTile(
+      {Key? key,
+      required this.cityName,
+      required this.timeTaken,
+      required this.imageUrl,
+      required this.farePrice,
+      required this.totalKms})
       : super(key: key);
 
   @override
@@ -118,7 +119,7 @@ class CountryListTile extends StatelessWidget {
                     child: const AutoSizeText(
                       "Reserve Seat",
                       style:
-                      TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                   ),
                 ],

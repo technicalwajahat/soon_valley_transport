@@ -57,7 +57,7 @@ class _UserBookingState extends State<UserBooking> {
                                   const AutoSizeText(
                                     "Source",
                                     style:
-                                    TextStyle(fontWeight: FontWeight.w600),
+                                        TextStyle(fontWeight: FontWeight.w600),
                                   ),
                                   AutoSizeText(
                                     snapshot.data![index].fromTravel.toString(),
@@ -74,7 +74,7 @@ class _UserBookingState extends State<UserBooking> {
                                   const AutoSizeText(
                                     "Destination",
                                     style:
-                                    TextStyle(fontWeight: FontWeight.w600),
+                                        TextStyle(fontWeight: FontWeight.w600),
                                   ),
                                   AutoSizeText(
                                     snapshot.data![index].toTravel.toString(),

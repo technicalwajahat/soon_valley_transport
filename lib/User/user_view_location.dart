@@ -40,9 +40,8 @@ class _ViewLocationState extends State<ViewLocation> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-            onPressed: () =>
-                HandleLocations()
-                    .openMap(32.568470218444176, 72.15302640757947, context),
+            onPressed: () => HandleLocations()
+                .openMap(32.568470218444176, 72.15302640757947, context),
             icon: const Icon(Icons.navigation_rounded)),
         centerTitle: true,
         bottomOpacity: 0,
@@ -57,9 +56,7 @@ class _ViewLocationState extends State<ViewLocation> {
             onPressed: () {
               HandleLocations().getCurrentLocation(context).then((value) =>
                   Share.share(
-                      'https://www.google.com/maps/search/?api=1&query=${_currentPosition
-                          ?.latitude ?? ""},${_currentPosition?.longitude ??
-                          ""}'));
+                      'https://www.google.com/maps/search/?api=1&query=${_currentPosition?.latitude ?? ""},${_currentPosition?.longitude ?? ""}'));
             },
           ),
         ],

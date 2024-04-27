@@ -10,15 +10,8 @@ class Location {
   String? fromCity;
   String? toCity;
 
-  Location(
-      this.driverName,
-      this.busName,
-      this.busNumber,
-      this.contactNumber,
-      this.latitude,
-      this.longitude,
-      this.fromCity,
-      this.toCity);
+  Location(this.driverName, this.busName, this.busNumber, this.contactNumber,
+      this.latitude, this.longitude, this.fromCity, this.toCity);
 
   Location.fromDocumentSnapshot(QueryDocumentSnapshot snapshot) {
     busName = snapshot.get('busName');
