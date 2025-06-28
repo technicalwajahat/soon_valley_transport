@@ -5,7 +5,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:soon_valley_transport/Driver/driver_dashboard.dart';
 
 import '../Model/user_model.dart';
@@ -14,7 +13,7 @@ import '../User/user_dashboard.dart';
 import 'login_screen.dart';
 
 class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+  const Home({super.key});
 
   @override
   State<Home> createState() => _HomeState();
@@ -78,8 +77,6 @@ class _HomeState extends State<Home> {
               onPressed: () async {
                 Navigator.pop(context, 'Cancel');
                 setState(() => isAlertSet = false);
-                isDeviceConnected =
-                    await InternetConnectionChecker().hasConnection;
                 // if (!isDeviceConnected && isAlertSet == false) {
                 //   showDialogBox();
                 //   setState(() => isAlertSet = true);
